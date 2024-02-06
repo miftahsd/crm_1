@@ -1,0 +1,84 @@
+{
+    "elements": [{
+        "elements": [{
+            "elements": [{
+                "className": "org.joget.plugin.enterprise.MultiPagedForm",
+                "properties": {
+                    "prevButtonlabel": "Prev",
+                    "css": "",
+                    "storeMainFormOnPartiallyStore": "",
+                    "nextButtonlabel": "Next",
+                    "partiallyStore": "",
+                    "id": "mpfA",
+                    "label": "",
+                    "onlyAllowSubmitOnLastPage": "",
+                    "numberOfPage": {
+                        "className": "2",
+                        "properties": {
+                            "page1_subFormParentId": "",
+                            "page1_formDefId": "crm_account",
+                            "page2_readonly": "",
+                            "page2_label": "#i18n.Contacts#",
+                            "page1_validate": "true",
+                            "page1_readonly": "",
+                            "page2_parentSubFormId": "id",
+                            "page2_subFormParentId": "",
+                            "page1_label": "#i18n.Account Details#",
+                            "page1_readonlyLabel": "",
+                            "page1_parentSubFormId": "id",
+                            "page2_validate": "true",
+                            "page2_formDefId": "AccountContacts",
+                            "page2_readonlyLabel": ""
+                        }
+                    },
+                    "displayMode": "tab",
+                    "ajaxMode": ""
+                }
+            }],
+            "className": "org.joget.apps.form.model.Column",
+            "properties": {"width": "100%"}
+        }],
+        "className": "org.joget.apps.form.model.Section",
+        "properties": {
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "id": "section1",
+            "label": "Manage Accounts",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "noPermissionMessage": "",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Account:  Parent",
+        "description": "",
+        "postProcessorRunOn": "both",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "id": "AccountsMain",
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_crm_account"
+    }
+}

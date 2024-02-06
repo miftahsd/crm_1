@@ -1,0 +1,146 @@
+{
+    "elements": [{
+        "elements": [{
+            "elements": [{
+                "className": "org.joget.plugin.enterprise.FormGrid",
+                "properties": {
+                    "validateMaxRow": "",
+                    "formDefId": "AccountContactSub",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "pageSize": "20",
+                    "enableSorting": "",
+                    "storeBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "formDefId": "crm_contact",
+                            "foreignKey": "account"
+                        }
+                    },
+                    "readonly": "",
+                    "deleteGridData": "",
+                    "options": [
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Title",
+                            "formatType": "text",
+                            "value": "title"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "First Name",
+                            "formatType": "text",
+                            "value": "firstName"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Last Name",
+                            "formatType": "text",
+                            "value": "lastName"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Email",
+                            "formatType": "text",
+                            "value": "email"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Mobile",
+                            "formatType": "text",
+                            "value": "mobile"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Office",
+                            "formatType": "text",
+                            "value": "office"
+                        },
+                        {
+                            "format": "",
+                            "width": "",
+                            "label": "Country",
+                            "formatType": "text",
+                            "value": "country"
+                        }
+                    ],
+                    "id": "fgC",
+                    "abortRelatedRunningProcesses": "",
+                    "height": "80%",
+                    "showRowNumber": "",
+                    "disabledDelete": "",
+                    "validateMinRow": "",
+                    "submit-label-normal": "",
+                    "uniqueKey": "",
+                    "errorMessage": "Invalid number of rows",
+                    "deleteSubformData": "",
+                    "deleteMessage": "Delete row?",
+                    "label": "",
+                    "loadBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "formDefId": "crm_contact",
+                            "foreignKey": "account"
+                        }
+                    },
+                    "disabledAdd": "",
+                    "submit-label-readonly": "",
+                    "width": "80%",
+                    "readonlyLabel": ""
+                }
+            }],
+            "className": "org.joget.apps.form.model.Column",
+            "properties": {"width": "100%"}
+        }],
+        "className": "org.joget.apps.form.model.Section",
+        "properties": {
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "id": "section1",
+            "label": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "noPermissionMessage": "",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "Account: Contacts  Tab",
+        "description": "",
+        "postProcessorRunOn": "both",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "id": "AccountContacts",
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_crm_account"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "datas": {
+        "form": {
+            "crm_contact": ["t05"],
+            "AccountContactSub": ["t05"],
+            "crm_proposal_approval_form": ["t01"],
+            "crm_account": ["t07"],
+            "AccountContacts": ["t05"],
+            "Users": ["t09"],
+            "crm_opportunity": ["t03"],
+            "crm_proposal_sending_form": ["t01"],
+            "crm_proposal_resubmit_form": ["t01"],
+            "AccountsMain": ["t07"],
+            "crm_proposal_form": ["t01"]
+        },
+        "list": {
+            "ProposalDashboardInbox": ["t01"],
+            "OpportunityDashboard": ["t03"],
+            "UsersDashboard": ["t09"],
+            "ContactDashboard": ["t05"],
+            "ProposalsDashboard": ["t01"],
+            "crm_opportunity_list": ["t03"],
+            "crm_account_list": ["t07"],
+            "crm_contact_list": ["t05"],
+            "Users": ["t09"],
+            "Proposal": ["t01"],
+            "AccountsDashboard": ["t07"]
+        },
+        "userview": {"crm_userview_sales": ["t02"]}
+    },
+    "labels": {
+        "t10": {"color": "black"},
+        "t01": {"color": "red"},
+        "t03": {"color": "orange"},
+        "t02": {"color": "pink"},
+        "t05": {"color": "green"},
+        "t04": {"color": "yellow"},
+        "t07": {"color": "blue"},
+        "t06": {"color": "lime"},
+        "t09": {"color": "purple"},
+        "t08": {"color": "sky"}
+    }
+}

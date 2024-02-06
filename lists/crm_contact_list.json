@@ -1,0 +1,282 @@
+{
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "name": "account",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "crm_account",
+                            "labelColumn": "accountName",
+                            "extraCondition": "",
+                            "emptyLabel": "",
+                            "idColumn": "id"
+                        }
+                    },
+                    "options": []
+                }
+            },
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "account",
+                    "hrefParam": "id",
+                    "href": "AccountForm",
+                    "label": "",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_2",
+            "label": "Acc Name",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "displayLabel": "Title",
+            "name": "title",
+            "id": "column_7",
+            "label": "Title"
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "First name",
+            "sortable": "true",
+            "exclude_export": "",
+            "datalist_type": "",
+            "name": "firstName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "href": "ContactForm",
+                    "label": "Link",
+                    "confirmation": "",
+                    "target": "_top"
+                }
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
+        },
+        {
+            "filterable": "true",
+            "formats": ";",
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Last name",
+            "sortable": "true",
+            "datalist_type": "",
+            "exclude_export": "",
+            "name": "lastName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "name": "mobile",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "label": "Mobile",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "name": "office",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "label": "Office",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Email",
+            "sortable": "true",
+            "exclude_export": "",
+            "datalist_type": "",
+            "name": "email",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "name": "dateModified",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "label": "Date Modified",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "account",
+    "description": "",
+    "filters": [
+        {
+            "name": "account",
+            "id": "filter_1",
+            "label": "Acc Name",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "crm_account",
+                            "labelColumn": "accountName",
+                            "extraCondition": "",
+                            "emptyLabel": "",
+                            "idColumn": ""
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "autocomplete",
+                    "options": []
+                }
+            },
+            "filterParamName": "d-6304176-fn_account"
+        },
+        {
+            "name": "firstName",
+            "id": "filter_2",
+            "label": "First Name",
+            "type": {
+                "className": "org.joget.plugin.enterprise.SelectBoxDataListFilterType",
+                "properties": {
+                    "size": "",
+                    "optionsBinder": {
+                        "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                        "properties": {
+                            "addEmptyOption": "",
+                            "groupingColumn": "",
+                            "useAjax": "",
+                            "formDefId": "crm_contact",
+                            "labelColumn": "firstName",
+                            "extraCondition": "",
+                            "emptyLabel": "",
+                            "idColumn": "firstName"
+                        }
+                    },
+                    "defaultValue": "",
+                    "multiple": "autocomplete",
+                    "options": []
+                }
+            },
+            "filterParamName": "d-6304176-fn_firstName"
+        },
+        {
+            "name": "lastName",
+            "id": "filter_0",
+            "label": "Last Name"
+        },
+        {
+            "name": "mobile",
+            "id": "filter_3",
+            "label": "Mobile",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-6304176-fn_mobile"
+        }
+    ],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "hidePageSize": "",
+    "checkboxPosition": "left",
+    "name": "Contacts",
+    "id": "crm_contact_list",
+    "binder": {
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {
+            "formDefId": "crm_contact",
+            "extraCondition": ""
+        }
+    },
+    "actions": [],
+    "order": "2"
+}

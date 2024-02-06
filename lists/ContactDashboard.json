@@ -1,0 +1,90 @@
+{
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "First name",
+            "sortable": "false",
+            "exclude_export": "",
+            "datalist_type": "",
+            "name": "firstName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "href": "ContactForm",
+                    "label": "Hyperlink",
+                    "confirmation": "",
+                    "target": "_top"
+                }
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "displayLabel": "Last Name",
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Last name",
+            "sortable": "false",
+            "datalist_type": "",
+            "exclude_export": "",
+            "name": "lastName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "displayLabel": "Mobile Number",
+            "name": "mobile",
+            "id": "column_4",
+            "label": "Mobile Number"
+        }
+    ],
+    "pageSize": "10",
+    "orderBy": "dateModified",
+    "description": "",
+    "filters": [],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "hidePageSize": "true",
+    "checkboxPosition": "left",
+    "name": "Contacts Dashboard",
+    "id": "ContactDashboard",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "having": [],
+            "aggregateField": [],
+            "formDefId": "crm_contact",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": ""
+        }
+    },
+    "actions": [],
+    "order": "1"
+}

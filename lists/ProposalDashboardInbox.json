@@ -1,0 +1,106 @@
+{
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "name": "title",
+            "width": "",
+            "headerAlignment": "dataListAlignLeft",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "href": "ProposalForm",
+                    "label": "",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_4",
+            "label": "Proposal Title",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "<span style='color:lime;font-weight:bold;'>Approved<\/span>",
+                            "value": "Approved"
+                        },
+                        {
+                            "label": "<span style='color:red;font-weight:bold;'>Resubmit<\/span>",
+                            "value": "Resubmit"
+                        },
+                        {
+                            "label": "<span style='color:red;font-weight:bold;'>Rejected<\/span>",
+                            "value": "Rejected"
+                        },
+                        {
+                            "label": "<span style='color:blue;font-weight:bold;'>New<\/span>",
+                            "value": "New"
+                        }
+                    ]
+                }
+            },
+            "label": "Status",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "status",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        }
+    ],
+    "pageSize": "10",
+    "orderBy": "dateModified",
+    "description": "",
+    "filters": [],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "hidePageSize": "true",
+    "checkboxPosition": "left",
+    "name": "Proposal Dashboard Inbox",
+    "id": "ProposalDashboardInbox",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "having": [],
+            "aggregateField": [],
+            "formDefId": "crm_proposal_approval_form",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": ""
+        }
+    },
+    "actions": [],
+    "order": "1"
+}

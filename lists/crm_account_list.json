@@ -1,0 +1,191 @@
+{
+    "useSession": "",
+    "rowActions": [
+        {
+            "name": "Data List Hyperlink",
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_0",
+            "label": "Hyperlink",
+            "type": "text",
+            "properties": {
+                "visible": "",
+                "hrefColumn": "id",
+                "hrefParam": "d-6304176-fn_account",
+                "rules": [],
+                "href": "contact_list",
+                "label": "View Contacts",
+                "confirmation": "",
+                "target": "_self"
+            }
+        },
+        {
+            "name": "Data List Hyperlink",
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "type": "text",
+            "properties": {
+                "visible": "",
+                "hrefColumn": "id",
+                "hrefParam": "fk_account",
+                "rules": [],
+                "href": "ContactForm",
+                "label": "New Contact",
+                "confirmation": "",
+                "target": "_self"
+            }
+        }
+    ],
+    "columns": [
+        {
+            "hidden": "false",
+            "name": "id",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "label": "Acc Id",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "name": "accountName",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "id",
+                    "hrefParam": "id",
+                    "href": "AccountForm",
+                    "label": "",
+                    "confirmation": "",
+                    "target": "_self"
+                }
+            },
+            "style": "",
+            "id": "column_1",
+            "label": "Acc Name",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "name": "fax",
+            "width": "",
+            "headerAlignment": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "label": "Fax",
+            "sortable": "true",
+            "exclude_export": "",
+            "alignment": ""
+        },
+        {
+            "displayLabel": "City",
+            "name": "city",
+            "id": "column_2",
+            "label": "City"
+        },
+        {
+            "filterable": "true",
+            "formats": ";",
+            "name": "state",
+            "action": "",
+            "id": "column_4",
+            "label": "State",
+            "sortable": "true"
+        },
+        {
+            "filterable": "true",
+            "formats": ";",
+            "name": "country",
+            "action": "",
+            "id": "column_5",
+            "label": "Country",
+            "sortable": "true"
+        },
+        {
+            "displayLabel": "Date Modified",
+            "name": "dateModified",
+            "id": "column_3",
+            "label": "Date Modified"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "accountName",
+    "description": "",
+    "filters": [
+        {
+            "name": "id",
+            "id": "filter_4",
+            "label": "Acc Id",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-5043735-fn_id"
+        },
+        {
+            "name": "accountName",
+            "id": "filter_3",
+            "label": "Acc Name",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-5043735-fn_accountName"
+        },
+        {
+            "name": "city",
+            "id": "filter_2",
+            "label": "City"
+        },
+        {
+            "name": "state",
+            "id": "filter_1",
+            "label": "State"
+        },
+        {
+            "name": "country",
+            "id": "filter_0",
+            "label": "Country"
+        }
+    ],
+    "showDataWhenFilterSet": "",
+    "hidePageSize": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "Accounts",
+    "id": "crm_account_list",
+    "binder": {
+        "name": "",
+        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "properties": {"formDefId": "crm_account"}
+    },
+    "actions": [],
+    "order": "2"
+}

@@ -1,0 +1,105 @@
+{
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "showPageSizeSelector": "true",
+    "rowActions": [],
+    "columns": [
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Username",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "username",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "First name",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "firstName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+                "properties": {
+                    "visible": "",
+                    "hrefColumn": "username",
+                    "hrefParam": "id",
+                    "href": "UserForm",
+                    "label": "Link",
+                    "confirmation": "",
+                    "target": "_parent"
+                }
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Last name",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "lastName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        }
+    ],
+    "pageSize": "10",
+    "orderBy": "username",
+    "description": "",
+    "filters": [],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "hidePageSize": "true",
+    "checkboxPosition": "left",
+    "name": "Users Dashboard",
+    "id": "UsersDashboard",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JogetEntityDatalistBinder",
+        "properties": {
+            "extraCondition": "",
+            "filters": [{
+                "field": "username",
+                "join": "AND",
+                "value": "admin",
+                "operator": "<>"
+            }],
+            "entity": "User"
+        }
+    },
+    "actions": [],
+    "order": "2"
+}

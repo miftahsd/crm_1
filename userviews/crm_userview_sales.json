@@ -1,0 +1,960 @@
+{
+    "layout": {
+        "className": "org.joget.apps.userview.model.UserviewLayout",
+        "properties": {
+            "customHeader": "",
+            "afterMenu": "",
+            "beforeMenu": "",
+            "customFooter": "",
+            "theme": {
+                "className": "org.joget.apps.userview.lib.DefaultTheme",
+                "properties": {
+                    "css": "",
+                    "js": ""
+                }
+            }
+        }
+    },
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.HtmlPage",
+                "properties": {
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "enableOffline": "",
+                    "id": "E0C637EF07594EA8935F2FD3755410DA",
+                    "label": "<i class=\"fa fa-home\" aria-hidden=\"true\"><\/i> Welcome",
+                    "customId": "w",
+                    "content": "<h1><\/h1>\n<table width=\"90%\" border=\"0\" collapse=\"\" align=\"center\">\n<tbody>\n<tr>\n<td>\n<h1><span style=\"font-size: 36pt; color: #333333;\">Welcome to the CRM App<\/span><\/h1>\n<p><span style=\"font-size: 14pt; color: #000000;\"> Track and Manage Your Customers and Business Opportunities<\/span><\/p>\n<\/td>\n<\/tr>\n<tr>\n<td><img width=\"100%\" src=\"#appResource.busy-customer-tightcrop-a.jpg#\"><\/td>\n<\/tr>\n<tr>\n<td><br>\n<p><span style=\"color: #333333;\">Use the free CRM app in your business to:<\/span><\/p>\n<ul>\n<li><span style=\"color: #333333;\">Track your prospects and customers,<\/span><\/li>\n<li><span style=\"color: #333333;\">Track sales opportunities, and<\/span><\/li>\n<li><span style=\"color: #333333;\">Submit sales proposals for approval.<\/span><\/li>\n<\/ul>\n<p><span style=\"color: #333333;\">This CRM app has been built to make use of the new features and capababilities of Joget DX Enterprise or Professional Edition.<\/span><\/p>\n<p><span style=\"color: #333333;\">Tips to Joget administrator:<\/span><span style=\"color: #333333;\"><\/span><\/p>\n<ul>\n<li><span style=\"color: #333333;\">Input your Joget SMTP server configurations in <a href=\"/jw/web/console/setting/general\" target=\"_blank\" rel=\"noopener\" style=\"color: #333333;\">Web Console &gt; General Settings <\/a> to send email messages.<\/span><\/li>\n<li><span style=\"color: #333333;\">Input an email address for admin &amp; other users in <a href=\"/jw/web/console/directory/users\" target=\"_blank\" rel=\"noopener\" style=\"color: #333333;\">Web Console &gt; Setup Users <\/a> for email notification to work.<\/span><\/li>\n<\/ul>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>"
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "comment": "",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
+                    "properties": {}
+                },
+                "id": "category-856C84EE31D341718E513A7C8F9D2384",
+                "label": "Welcome"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "permission": {
+                "className": "org.joget.apps.userview.model.UserviewPermission",
+                "properties": {}
+            },
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.DashboardMenu",
+                "properties": {
+                    "mode": "url",
+                    "customHeader": "<h2 style=\"width: 300px; padding: 5px; background-color: #00000061 !important; color: white !important; margin-left: -40px !important;\">&nbsp;&nbsp;&nbsp;#i18n.CRM DASHBOARD#<\/h2>\n<style>\n.breadcrumb {\n    display: block;\n    text-align: right;\n    margin-bottom: 15px;\n    background-color: #ffffffba !important;\n    font-size: 90%;\n    margin-left: auto;\n    width: fit-content;\n    padding: 3px !important;\n}\na.reset_position {\n    color: white !important;\n    background-color: #00000057;\n    width: 165px;\n    padding: 5px;\n    margin-left: auto;\n}\n#page:before  {\n  background-image: url(\"#appResource.desktop.jpg#\");\n  background-repeat: no-repeat, repeat;\n  background-size: cover;\n  content: \"\";\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  opacity: 0.3;\n}\n<\/style>",
+                    "userviewCacheDuration": "20",
+                    "defaultPortletHeight": "250",
+                    "userviewCacheScope": "",
+                    "customFooter": "",
+                    "urlPortletSetting": [
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "Accounts",
+                            "autoReload": "",
+                            "url": "AccountsDashboard?embed=true",
+                            "height": "400"
+                        },
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "Contacts",
+                            "autoReload": "",
+                            "url": "ContactDashboard?embed=true",
+                            "height": "400"
+                        },
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "Opportunities",
+                            "autoReload": "",
+                            "url": "OpportunityDashboard?embed=true",
+                            "height": "400"
+                        },
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "Proposals",
+                            "autoReload": "",
+                            "url": "ProposalsDashboard?embed=true",
+                            "height": "400"
+                        },
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "Proposals Inbox",
+                            "autoReload": "",
+                            "url": "ProposalDashboardInbox?embed=true",
+                            "height": "400"
+                        },
+                        {
+                            "autoHeight": "",
+                            "resizable": "true",
+                            "width": "1",
+                            "x": "",
+                            "y": "",
+                            "fixed": "",
+                            "label": "CRM Users",
+                            "autoReload": "",
+                            "url": "UsersDashboard?embed=true",
+                            "height": "400"
+                        }
+                    ],
+                    "enableOffline": "",
+                    "id": "4119535788344E2780088BE6E9701674",
+                    "label": "<i class=\"fa fa-tachometer\" aria-hidden=\"true\"><\/i> CRM Dashboard",
+                    "customId": "dashboard"
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-59B45DB28668439E9FBC38D7C30436AC",
+                "label": "Dashboard"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "permission": {
+                "className": "org.joget.apps.userview.model.UserviewPermission",
+                "properties": {}
+            },
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSavedRedirectUrl": "",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "editFormId": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "enableOffline": "",
+                    "list-deleteSubformData": "true",
+                    "selectionType": "multiple",
+                    "addFormId": "AccountsMain",
+                    "id": "668BFFC12CBA47B3B5782CEAC6D8F983",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "list-deleteFiles": "",
+                    "add-customHeader": "",
+                    "edit-readonly": "",
+                    "datalistId": "crm_account_list",
+                    "edit-nextButtonLabel": "",
+                    "list-confirmation": "",
+                    "userviewCacheDuration": "20",
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": "<h2> #i18n.Accounts List#<\/h2>",
+                    "edit-customHeader": "",
+                    "edit-afterSavedRedirectParamName": "",
+                    "list-abortRelatedRunningProcesses": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "customId": "account_list",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "add-customFooter": "",
+                    "list-deleteGridData": "true",
+                    "edit-allowRecordTraveling": "",
+                    "rowCount": "true",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "<i class=\"fa fa-list-ul\" aria-hidden=\"true\"><\/i> Accounts",
+                    "list-newLinkTarget": "",
+                    "edit-lastButtonLabel": "",
+                    "buttonPosition": "topLeft",
+                    "edit-firstButtonLabel": "",
+                    "add-saveButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "cacheListAction": "",
+                    "userviewCacheScope": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "edit-backButtonLabel": "",
+                    "list-editLinkTarget": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-7650DEEFC4CC4332AC25871B65BBDD48",
+                "label": "Account"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "permission": {
+                "className": "org.joget.apps.userview.model.UserviewPermission",
+                "properties": {}
+            },
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSavedRedirectUrl": "",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "editFormId": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "enableOffline": "",
+                    "list-deleteSubformData": "true",
+                    "selectionType": "multiple",
+                    "addFormId": "crm_contact",
+                    "id": "3F5A08D718CB44CC97DD225F7CB6C367",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "list-deleteFiles": "",
+                    "add-customHeader": "",
+                    "edit-readonly": "",
+                    "datalistId": "crm_contact_list",
+                    "edit-nextButtonLabel": "",
+                    "list-confirmation": "",
+                    "userviewCacheDuration": "20",
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": "<h2> #i18n.Contact List#<\/h2>",
+                    "edit-customHeader": "",
+                    "edit-afterSavedRedirectParamName": "",
+                    "list-abortRelatedRunningProcesses": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "customId": "contact_list",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "add-customFooter": "",
+                    "list-deleteGridData": "true",
+                    "edit-allowRecordTraveling": "",
+                    "rowCount": "true",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "<i class=\"fas fa-address-book\" aria-hidden=\"true\"><\/i> Contacts",
+                    "list-newLinkTarget": "",
+                    "edit-lastButtonLabel": "",
+                    "buttonPosition": "topLeft",
+                    "edit-firstButtonLabel": "",
+                    "add-saveButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "cacheListAction": "",
+                    "userviewCacheScope": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "edit-backButtonLabel": "",
+                    "list-editLinkTarget": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "comment": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-E77D2050680D4DB0A85A5C0C3AC1C083",
+                "label": "Contact"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "permission": {
+                "className": "org.joget.apps.userview.model.UserviewPermission",
+                "properties": {}
+            },
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSavedRedirectUrl": "",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "editFormId": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "enableOffline": "",
+                    "list-deleteSubformData": "",
+                    "selectionType": "multiple",
+                    "addFormId": "crm_opportunity",
+                    "id": "167C2F5959084A0F96EC74CC9AA83143",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "list-deleteFiles": "",
+                    "add-customHeader": "",
+                    "edit-readonly": "",
+                    "datalistId": "crm_opportunity_list",
+                    "edit-nextButtonLabel": "",
+                    "list-confirmation": "",
+                    "userviewCacheDuration": "20",
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": "<h2> #i18n.Opportunities List#<\/h2>",
+                    "edit-customHeader": "",
+                    "edit-afterSavedRedirectParamName": "",
+                    "list-abortRelatedRunningProcesses": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "customId": "opportunity_list",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "add-customFooter": "",
+                    "list-deleteGridData": "",
+                    "edit-allowRecordTraveling": "",
+                    "rowCount": "true",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "<i class=\"zmdi zmdi-money\" aria-hidden=\"true\"><\/i> Opportunities",
+                    "list-newLinkTarget": "",
+                    "edit-lastButtonLabel": "",
+                    "buttonPosition": "topLeft",
+                    "edit-firstButtonLabel": "",
+                    "add-saveButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "cacheListAction": "",
+                    "userviewCacheScope": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "edit-backButtonLabel": "",
+                    "list-editLinkTarget": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-A12DBDB14B4447A984E6095B77F28B42",
+                "label": "Opportunity"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "keyName": "",
+                        "assignment-customFooter": "",
+                        "enableOffline": "",
+                        "label": "Proposals Inbox",
+                        "customId": "proposal_inbox_list",
+                        "datalistId": "Proposal",
+                        "showDetail": "",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "processId": "process1",
+                        "userviewCacheScope": "",
+                        "showPopup": "",
+                        "id": "1CA60376AC1948AFBB139DD9B10F5E85",
+                        "rowCount": "true",
+                        "list-customHeader": "#i18n.page_Proposals Inbox_header#"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CrudMenu",
+                    "properties": {
+                        "add-afterSavedRedirectUrl": "",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "editFormId": "crm_proposal_sending_form",
+                        "edit-saveButtonLabel": "",
+                        "list-showDeleteButton": "yes",
+                        "list-newButtonLabel": "",
+                        "add-afterSavedRedirectParamName": "",
+                        "enableOffline": "",
+                        "list-deleteSubformData": "true",
+                        "selectionType": "multiple",
+                        "addFormId": "",
+                        "id": "C8FBA63D8A51441CB23886FFE4FC8AEF",
+                        "add-messageShowAfterComplete": "",
+                        "edit-readonlyLabel": "",
+                        "list-editLinkLabel": "View",
+                        "add-cancelButtonLabel": "",
+                        "list-deleteFiles": "",
+                        "add-customHeader": "",
+                        "edit-readonly": "yes",
+                        "datalistId": "Proposal",
+                        "edit-nextButtonLabel": "",
+                        "list-confirmation": "",
+                        "userviewCacheDuration": "20",
+                        "add-afterSaved": "list",
+                        "add-afterSavedRedirectParamvalue": "",
+                        "list-customHeader": "<h2>#i18n.All Proposals#<\/h2>\n",
+                        "edit-customHeader": "",
+                        "edit-afterSavedRedirectParamName": "",
+                        "list-abortRelatedRunningProcesses": "true",
+                        "edit-afterSavedRedirectUrl": "",
+                        "edit-prevButtonLabel": "",
+                        "customId": "proposal_list",
+                        "edit-afterSaved": "list",
+                        "list-deleteButtonLabel": "",
+                        "checkboxPosition": "left",
+                        "add-customFooter": "",
+                        "list-deleteGridData": "true",
+                        "edit-allowRecordTraveling": "",
+                        "rowCount": "true",
+                        "edit-afterSavedRedirectParamvalue": "",
+                        "edit-customFooter": "",
+                        "keyName": "",
+                        "label": "Proposals",
+                        "list-newLinkTarget": "",
+                        "edit-lastButtonLabel": "",
+                        "buttonPosition": "topLeft",
+                        "edit-firstButtonLabel": "",
+                        "add-saveButtonLabel": "",
+                        "edit-messageShowAfterComplete": "",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "edit-moreActions": [],
+                        "list-moreActions": [],
+                        "edit-backButtonLabel": "",
+                        "list-editLinkTarget": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Submit A New Proposal",
+                        "paramName": "",
+                        "customId": "proposal_process",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "2D27B3875F234315A7A3562BD0E35AB2",
+                        "fieldPassover": "proposal_inbox_list",
+                        "processDefId": "process1",
+                        "redirectUrlAfterComplete": "proposal_inbox_list"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "comment": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-78EC0B8A1E8E483A93770714BB0D6F6E",
+                "label": "<i class=\"fas fa-folder\" aria-hidden=\"true\"><\/i> Proposals"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "permission": {
+                "className": "org.joget.apps.userview.model.UserviewPermission",
+                "properties": {}
+            },
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSavedRedirectUrl": "",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "editFormId": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "",
+                    "list-newButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "enableOffline": "",
+                    "selectionType": "multiple",
+                    "addFormId": "Users",
+                    "id": "066B35BF4B9F41B39EE8BAE59B52DD26",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customHeader": "",
+                    "edit-readonly": "",
+                    "datalistId": "Users",
+                    "edit-nextButtonLabel": "",
+                    "userviewCacheDuration": "20",
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": "<h2>#i18n.Joget Users List#<\/h2>",
+                    "edit-customHeader": "",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "customId": "user_list",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "add-customFooter": "",
+                    "edit-allowRecordTraveling": "",
+                    "rowCount": "true",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "<i class=\"fa fa-user\" aria-hidden=\"true\"><\/i> Manage Users",
+                    "list-newLinkTarget": "",
+                    "edit-lastButtonLabel": "",
+                    "buttonPosition": "topLeft",
+                    "edit-firstButtonLabel": "",
+                    "add-saveButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "cacheListAction": "",
+                    "userviewCacheScope": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "edit-backButtonLabel": "",
+                    "list-editLinkTarget": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "id": "category-C6A8AA1309C0400CBD123D8A361E92D0",
+                "label": "Users"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "userviewCacheDuration": "10",
+                        "userviewCacheScope": "application",
+                        "enableOffline": "",
+                        "id": "765269E3926049B0A21D16581EE188DF",
+                        "label": "About",
+                        "customId": "about",
+                        "content": "<p>#i18n.page_about_richText2#<\/p>"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.HtmlPage",
+                    "properties": {
+                        "userviewCacheDuration": "10",
+                        "userviewCacheScope": "application",
+                        "enableOffline": "",
+                        "id": "4511567E28A142F0B84FA35690E22032",
+                        "label": "Joget Resources",
+                        "customId": "jogetworkflowresource",
+                        "content": "<p>#i18n.page_Joget Resources_richText#<\/p>"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "comment": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "id": "category-8739F2859D894A339404C2404CB9004E",
+                "label": "<i class=\"fa fa-info-circle\" aria-hidden=\"true\"><\/i> Info"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "formId": "AccountsMain",
+                        "customHeader": "",
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "account_list",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnCancel": "top",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Account Form",
+                        "paramName": "",
+                        "customId": "AccountForm",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "cancelButtonLabel": "",
+                        "readonly": "",
+                        "userviewCacheScope": "",
+                        "id": "4F2CF33C35EE436B94252DEE0B706093",
+                        "fieldPassover": "",
+                        "redirectUrlAfterComplete": "account_list",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "formId": "crm_contact",
+                        "customHeader": "",
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "contact_list",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnCancel": "top",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Contact Form",
+                        "paramName": "",
+                        "customId": "ContactForm",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "cancelButtonLabel": "",
+                        "readonly": "",
+                        "userviewCacheScope": "",
+                        "id": "1AC2475E48FF445DAEDDBD67EC2720D7",
+                        "fieldPassover": "",
+                        "redirectUrlAfterComplete": "contact_list",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "formId": "crm_opportunity",
+                        "customHeader": "",
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "opportunity_list",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnCancel": "top",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Opportunity Form",
+                        "paramName": "",
+                        "customId": "OpportunityForm",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "cancelButtonLabel": "",
+                        "readonly": "",
+                        "userviewCacheScope": "",
+                        "id": "05C606A887F84047B7F6F43F8A8A68DF",
+                        "fieldPassover": "",
+                        "redirectUrlAfterComplete": "opportunity_list",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "formId": "crm_proposal_sending_form",
+                        "customHeader": "",
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "proposal_list",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnCancel": "top",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Proposal Form",
+                        "paramName": "",
+                        "customId": "ProposalForm",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "cancelButtonLabel": "",
+                        "readonly": "",
+                        "userviewCacheScope": "",
+                        "id": "EE5F3943C1D743179B85CE8C34C4360D",
+                        "fieldPassover": "",
+                        "redirectUrlAfterComplete": "proposal_list",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "formId": "Users",
+                        "customHeader": "",
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "user_list",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnCancel": "top",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "User Form",
+                        "paramName": "",
+                        "customId": "UserForm",
+                        "messageShowAfterComplete": "",
+                        "userviewCacheDuration": "20",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "cancelButtonLabel": "",
+                        "readonly": "",
+                        "userviewCacheScope": "",
+                        "id": "F9FBAA40050844E6A4F5E27B172F2243",
+                        "fieldPassover": "",
+                        "redirectUrlAfterComplete": "user_list",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Accounts Dashboard List",
+                        "customId": "AccountsDashboard",
+                        "buttonPosition": "bottomLeft",
+                        "datalistId": "AccountsDashboard",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "id": "C6BA655B6EF24F77BC9DBCC9F50E1E44",
+                        "rowCount": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Contact Dashboard List",
+                        "customId": "ContactDashboard",
+                        "buttonPosition": "bottomLeft",
+                        "datalistId": "ContactDashboard",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "id": "1BF84D864EE54197A468DE9872C8AC3A",
+                        "rowCount": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Opportunity Dashboard List",
+                        "customId": "OpportunityDashboard",
+                        "buttonPosition": "bottomLeft",
+                        "datalistId": "OpportunityDashboard",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "id": "EAB2441B95A54B0786DE4861F16EA6C4",
+                        "rowCount": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>\r\n<p>\r\n    <button id=\"newExpense\" name=\"newExpense\" class=\"form-button waves-effect btn waves-button waves-float\" \r\n        onclick=parent.document.location.href='proposal_process'>#i18n.Submit A New Proposal Button#<\/button>\r\n<\/>",
+                        "keyName": "",
+                        "customFooter": "",
+                        "enableOffline": "",
+                        "label": "Proposals Dashboard List",
+                        "customId": "ProposalsDashboard",
+                        "buttonPosition": "topLeft",
+                        "datalistId": "ProposalsDashboard",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "id": "7F17D3C619D345F39E2CE9F8414A9948",
+                        "rowCount": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "assignment-customHeader": "",
+                        "keyName": "",
+                        "assignment-customFooter": "",
+                        "label": "Proposal Inbox List",
+                        "customId": "ProposalDashboardInbox",
+                        "datalistId": "ProposalDashboardInbox",
+                        "showDetail": "",
+                        "userviewCacheDuration": "20",
+                        "processId": "process1",
+                        "userviewCacheScope": "",
+                        "id": "44590F6D43AC40408FB86A5563932496",
+                        "rowCount": "",
+                        "list-customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "customHeader": "<script>\r\n    var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n<\/script>\r\n<style>\r\n    .exportlinks { display: none!important; }\r\n<\/style>",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Users Dashboard List",
+                        "customId": "UsersDashboard",
+                        "buttonPosition": "bottomLeft",
+                        "datalistId": "UsersDashboard",
+                        "checkboxPosition": "no",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "id": "7A422D98BC364694B114408AF6394C64",
+                        "rowCount": "true"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "yes",
+                "comment": "",
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+                    "properties": {}
+                },
+                "id": "category-776D057C3080485AA56964E5DEBCF9F2",
+                "label": "Hidden"
+            }
+        }
+    ],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#",
+        "name": "#i18n.applicationName#",
+        "description": "",
+        "footerMessage": "<a href=\"http://joget.org/\" target=\"_blank\">Powered by Joget<\/a>",
+        "id": "crm_userview_sales"
+    },
+    "setting": {
+        "className": "org.joget.apps.userview.model.UserviewSetting",
+        "properties": {
+            "__": "",
+            "userviewDescription": "",
+            "userviewId": "crm_userview_sales",
+            "hideThisUserviewInAppCenter": "",
+            "userview_thumbnail": "#appResource.crm.png#",
+            "userview_category": "",
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "theme": {
+                "className": "org.joget.plugin.enterprise.Dx8ColorAdminTheme",
+                "properties": {
+                    "dx8navBadge": "#8F8D9E",
+                    "css": ".menu-container li + li {\r\n    border-top: 2px dotted #8f8f8f !important;\r\n}\r\n#dashboard.main-body-content {\r\n    padding: 0px 50px 350px 50px !important;\r\n}\r\nbody#w div#content {\r\n    padding: 20px 100px 50px !important;\r\n}\r\n#w > div > h1 {\r\n    padding: 5px !important;\r\n    background-color: #dc3545 !important;\r\n}\r\n#content main .main-body-content > .ui-html {\r\n    border-radius: 0px 0px 120px;\r\n}\r\n@media only screen and (max-width: 600px) {\r\n    #dashboard.main-body-content {\r\n        padding: 0px 10px 350px 10px !important;\r\n    }\r\n    body#w div#content {\r\n        padding: 100px 20px 50px !important;\r\n    }\r\n}\r\n\r\n\r\n",
+                    "loginBackground": "#appResource.busy-customer-pixel.jpg#",
+                    "disablePush": "",
+                    "dx8navLinkColor": "",
+                    "removeAssignmentTitle": "",
+                    "shortcutLinkLabel": "Shortcut",
+                    "disableHelpGuide": "",
+                    "logo": "",
+                    "enableResponsiveSwitch": "true",
+                    "dx8headerFontColor": "",
+                    "fav_icon": "",
+                    "dx8navLinkIcon": "#4EA8F3",
+                    "horizontal_menu": "true",
+                    "profile": "",
+                    "homeAttractBanner": "",
+                    "dx8headingBgColor": "",
+                    "dx8linkColor": "#4EA8F3",
+                    "homeUrl": "",
+                    "dx8linkActiveColor": "",
+                    "disablePwa": "",
+                    "dx8footerColor": "",
+                    "subheader": "",
+                    "dx8contentbackground": "",
+                    "loginPageBottom": "",
+                    "name": "#i18n.applicationName#",
+                    "dx8backgroundImage": "",
+                    "dx8navBadgeText": "",
+                    "dx8background": "",
+                    "dx8navScrollbarTrack": "",
+                    "dx8headerColor": "",
+                    "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(127, 209, 174);rgb(117, 117, 117);rgb(15, 47, 74);rgb(0, 114, 210)",
+                    "dx8navBackground": "",
+                    "js": "",
+                    "dx8navActiveIconColor": "",
+                    "dx8navScrollbarThumb": "",
+                    "loginPageTop": "",
+                    "urlsToCache": "",
+                    "userMenu": [],
+                    "dx8buttonColor": "",
+                    "shortcut": [],
+                    "userImage": "",
+                    "fontControl": "",
+                    "dx8navActiveLinkBackground": "",
+                    "dx8fontColor": "",
+                    "dx8navLinkBackground": "",
+                    "dx8buttonBackground": "",
+                    "dx8contentFontColor": "",
+                    "subfooter": "",
+                    "dx8footerBackground": "",
+                    "dx8headingFontColor": "",
+                    "dx8primaryColor": "",
+                    "dx8navActiveLinkColor": "",
+                    "inbox": "current"
+                }
+            },
+            "userviewName": "CRM"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<appDefinition>
+   <id>crm</id>
+   <version></version>
+   <name>Customer Relationship Management</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>AppName</id>
+         <appId>crm</appId>
+         <appVersion>1</appVersion>
+         <value>Customer Relationship Management</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>refNo</id>
+         <appId>crm</appId>
+         <appVersion>1</appVersion>
+         <value>1</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>Vfe6Df5AdlrGEPqFYgTt8XuGJ4XiTt2NnBLEovw3qoQ=</license>
+</appDefinition>

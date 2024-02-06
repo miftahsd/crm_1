@@ -1,0 +1,735 @@
+{
+    "elements": [{
+        "elements": [{
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
+                        "workflowVariable": "",
+                        "id": "username",
+                        "value": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "maxlength": "",
+                        "validator": {
+                            "className": "org.joget.plugin.enterprise.DirectoryUserExistValidator",
+                            "properties": {
+                                "emptyMsg": "Missing required value",
+                                "field": "",
+                                "type": "",
+                                "errorMsg": "Username already exists"
+                            }
+                        },
+                        "label": "Username",
+                        "size": "",
+                        "encryption": "",
+                        "readonly": "",
+                        "workflowVariable": "",
+                        "style": "",
+                        "placeholder": "",
+                        "id": "id",
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "50",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "",
+                                "message": "",
+                                "type": "",
+                                "mandatory": "true"
+                            }
+                        },
+                        "workflowVariable": "",
+                        "id": "firstName",
+                        "label": "First name",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "50",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "lastName",
+                        "label": "Last name",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "maxlength": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "",
+                                "type": "email",
+                                "message": "",
+                                "mandatory": "true"
+                            }
+                        },
+                        "label": "Email",
+                        "encryption": "",
+                        "size": "50",
+                        "readonly": "",
+                        "workflowVariable": "",
+                        "style": "",
+                        "id": "email",
+                        "placeholder": "",
+                        "value": "",
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.PasswordField",
+                    "properties": {
+                        "readonly": "",
+                        "size": "50",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "id": "password",
+                        "label": "Password",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "options": [
+                            {
+                                "label": "Yes",
+                                "grouping": "",
+                                "value": "1"
+                            },
+                            {
+                                "label": "No",
+                                "grouping": "",
+                                "value": "0"
+                            }
+                        ],
+                        "workflowVariable": "",
+                        "id": "active",
+                        "label": "Active",
+                        "value": "1",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [
+                            {
+                                "label": "Select",
+                                "grouping": "",
+                                "value": ""
+                            },
+                            {
+                                "label": "(GMT -12:00) Eniwetok, Kwajalein",
+                                "grouping": "",
+                                "value": "-12"
+                            },
+                            {
+                                "label": "(GMT -11:00) Midway Island, Samoa",
+                                "grouping": "",
+                                "value": "-11"
+                            },
+                            {
+                                "label": "(GMT -10:00) Hawaii",
+                                "grouping": "",
+                                "value": "-10"
+                            },
+                            {
+                                "label": "(GMT -09:00) Alaska",
+                                "grouping": "",
+                                "value": "-9"
+                            },
+                            {
+                                "label": "(GMT -08:00) Pacific Time (US &amp; Canada), Tijuana",
+                                "grouping": "",
+                                "value": "-8"
+                            },
+                            {
+                                "label": "(GMT -07:00) Mountain Time (US &amp; Canada), Arizona",
+                                "grouping": "",
+                                "value": "-7"
+                            },
+                            {
+                                "label": "(GMT -06:00) Central Time (US &amp; Canada), Mexico City",
+                                "grouping": "",
+                                "value": "-6"
+                            },
+                            {
+                                "label": "(GMT -05:00) Eastern Time (US &amp; Canada), Bogota, Lima, Quito",
+                                "grouping": "",
+                                "value": "-5"
+                            },
+                            {
+                                "label": "(GMT -04:00) Atlantic Time (Canada), Caracas, La Paz",
+                                "grouping": "",
+                                "value": "-4"
+                            },
+                            {
+                                "label": "(GMT -03:30) Newfoundland",
+                                "grouping": "",
+                                "value": "-3.5"
+                            },
+                            {
+                                "label": "(GMT -03:00) Brassila, Buenos Aires, Georgetown, Falkland Is",
+                                "grouping": "",
+                                "value": "-3"
+                            },
+                            {
+                                "label": "(GMT -02:00) Mid-Atlantic, Ascension Is., St. Helena",
+                                "grouping": "",
+                                "value": "-2"
+                            },
+                            {
+                                "label": "(GMT -01:00) Azores, Cape Verde Islands",
+                                "grouping": "",
+                                "value": "-1"
+                            },
+                            {
+                                "label": "(GMT  00:00) Casablanca, Dublin, Edinburgh, London, Lisbon, Monrovia",
+                                "grouping": "",
+                                "value": "0"
+                            },
+                            {
+                                "label": "(GMT +01:00) Amsterdam, Berlin, Brussels, Madrid, Paris, Rome",
+                                "grouping": "",
+                                "value": "1"
+                            },
+                            {
+                                "label": "(GMT +02:00) Cairo, Helsinki, Kaliningrad, South Africa",
+                                "grouping": "",
+                                "value": "2"
+                            },
+                            {
+                                "label": "(GMT +03:00) Baghdad, Riyadh, Moscow, Nairobi",
+                                "grouping": "",
+                                "value": "3"
+                            },
+                            {
+                                "label": "(GMT +03:30) Tehran",
+                                "grouping": "",
+                                "value": "3.5"
+                            },
+                            {
+                                "label": "(GMT +04:00) Abu Dhabi, Baku, Muscat, Tbilisi",
+                                "grouping": "",
+                                "value": "4"
+                            },
+                            {
+                                "label": "(GMT +04:30) Kabul",
+                                "grouping": "",
+                                "value": "4.5"
+                            },
+                            {
+                                "label": "(GMT +05:00) Ekaterinburg, Islamabad, Karachi, Tashkent",
+                                "grouping": "",
+                                "value": "5"
+                            },
+                            {
+                                "label": "(GMT +05:30) Bombay, Calcutta, Madras, New Delhi",
+                                "grouping": "",
+                                "value": "5.5"
+                            },
+                            {
+                                "label": "(GMT +05:45) Katmandu",
+                                "grouping": "",
+                                "value": "5.75"
+                            },
+                            {
+                                "label": "(GMT +06:00) Almaty, Colombo, Dhaka, Novosibirsk",
+                                "grouping": "",
+                                "value": "6"
+                            },
+                            {
+                                "label": "(GMT +06:30) Rangoon",
+                                "grouping": "",
+                                "value": "6.5"
+                            },
+                            {
+                                "label": "(GMT +07:00) Bangkok, Hanoi, Jakarta",
+                                "grouping": "",
+                                "value": "7"
+                            },
+                            {
+                                "label": "(GMT +08:00) Beijing, Hong Kong, Perth, Kuala Lumpur, Singapore, Taipei",
+                                "grouping": "",
+                                "value": "8"
+                            },
+                            {
+                                "label": "(GMT +09:00) Osaka, Sapporo, Seoul, Tokyo, Yakutsk",
+                                "grouping": "",
+                                "value": "9"
+                            },
+                            {
+                                "label": "(GMT +09:30) Adelaide, Darwin",
+                                "grouping": "",
+                                "value": "9.5"
+                            },
+                            {
+                                "label": "(GMT +10:00) Canberra, Guam, Melbourne, Sydney, Vladivostok",
+                                "grouping": "",
+                                "value": "10"
+                            },
+                            {
+                                "label": "(GMT +11:00) Magadan, New Caledonia, Solomon Islands",
+                                "grouping": "",
+                                "value": "11"
+                            },
+                            {
+                                "label": "(GMT +12:00) Auckland, Wellington, Fiji, Marshall Island",
+                                "grouping": "",
+                                "value": "12"
+                            }
+                        ],
+                        "workflowVariable": "",
+                        "id": "timeZone",
+                        "label": "Time zone",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "readonly": "true",
+                        "size": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "userRoles",
+                        "label": "User Roles",
+                        "value": "ROLE_USER;",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.GroupOptionsBinder",
+                            "properties": {
+                                "autoHandleWorkflowVariable": "",
+                                "addEmptyOption": "true",
+                                "cacheIdlePause": "60",
+                                "cacheInterval": "",
+                                "emptyLabel": "#i18n.Select#",
+                                "orgId": "",
+                                "autoHandleFiles": ""
+                            }
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "workflowVariable": "",
+                        "id": "groups",
+                        "label": "Groups",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "employeeCode",
+                        "label": "Employee code",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "50",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "jobTitle",
+                        "label": "Job title",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.OrganizationOptionsBinder",
+                            "properties": {
+                                "autoHandleWorkflowVariable": "",
+                                "addEmptyOption": "true",
+                                "cacheIdlePause": "60",
+                                "cacheInterval": "",
+                                "emptyLabel": "#i18n.Select#",
+                                "autoHandleFiles": ""
+                            }
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "workflowVariable": "",
+                        "id": "organization",
+                        "label": "Organization",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.DepartmentOptionsBinder",
+                            "properties": {
+                                "autoHandleWorkflowVariable": "",
+                                "addEmptyOption": "true",
+                                "cacheIdlePause": "60",
+                                "cacheInterval": "",
+                                "emptyLabel": "#i18n.Select#",
+                                "orgId": "",
+                                "autoHandleFiles": ""
+                            }
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "workflowVariable": "",
+                        "id": "department",
+                        "label": "Department",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "options": [
+                            {
+                                "label": "Yes",
+                                "grouping": "",
+                                "value": "1"
+                            },
+                            {
+                                "label": "No",
+                                "grouping": "",
+                                "value": "0"
+                            }
+                        ],
+                        "workflowVariable": "",
+                        "id": "isHod",
+                        "label": "Is Hod?",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.GradeOptionsBinder",
+                            "properties": {
+                                "autoHandleWorkflowVariable": "",
+                                "addEmptyOption": "true",
+                                "cacheIdlePause": "60",
+                                "cacheInterval": "",
+                                "emptyLabel": "#i18n.Select#",
+                                "orgId": "",
+                                "autoHandleFiles": ""
+                            }
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "workflowVariable": "",
+                        "id": "grade",
+                        "label": "Grade",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "yearRange": "c-10:c+10",
+                        "startDateFieldId": "",
+                        "dataFormat": "yyyy-MM-dd",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "format": "dd-mm-yy",
+                        "label": "Employment start date",
+                        "currentDateAs": "",
+                        "endDateFieldId": "",
+                        "readonly": "",
+                        "allowManual": "",
+                        "workflowVariable": "",
+                        "id": "startDate",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "yearRange": "c-10:c+10",
+                        "startDateFieldId": "",
+                        "dataFormat": "yyyy-MM-dd",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "format": "dd-mm-yy",
+                        "label": "Employment end date",
+                        "currentDateAs": "",
+                        "endDateFieldId": "",
+                        "readonly": "",
+                        "allowManual": "",
+                        "workflowVariable": "",
+                        "id": "endDate",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                            "properties": {
+                                "autoHandleWorkflowVariable": "",
+                                "addEmptyOption": "true",
+                                "optionLabel": "",
+                                "useAjax": "",
+                                "groupId": "",
+                                "deptId": "",
+                                "cacheIdlePause": "60",
+                                "cacheInterval": "",
+                                "emptyLabel": "#i18n.Select#",
+                                "grouping": "",
+                                "orgId": "",
+                                "autoHandleFiles": ""
+                            }
+                        },
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "workflowVariable": "",
+                        "id": "reportTo",
+                        "label": "Report to",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field20",
+                        "label": "",
+                        "value": "<!---\r\n\r\n<script>\r\n    if ('#requestParam.id#' === 'admin' || 'requestParam.id' === 'Admin') {\r\n        document.location.href = '/jw/web/userview/v6_um/v6_um/_/suser';\r\n    }\r\n<\/script>\r\n\r\n--->"
+                    }
+                }
+            ],
+            "className": "org.joget.apps.form.model.Column",
+            "properties": {"width": "100%"}
+        }],
+        "className": "org.joget.apps.form.model.Section",
+        "properties": {
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "id": "section1",
+            "label": "Joget User Setup",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "noPermissionMessage": "You do not have permission to view or edit CRM User Accounts!<br/><br/>\n<a href=\"dashboard\">Return to listing.<\/a>",
+        "loadBinder": {
+            "className": "org.joget.plugin.enterprise.DirectoryUserFormBinder",
+            "properties": {"type": {
+                "className": "",
+                "properties": {
+                    "lastName": "lastName",
+                    "reportTo": "reportTo",
+                    "endDate": "endDate",
+                    "jobTitle": "jobTitle",
+                    "active": "active",
+                    "timeZone": "timeZone",
+                    "groups": "groups",
+                    "locale": "locale",
+                    "isHod": "isHod",
+                    "employeeCode": "employeeCode",
+                    "firstName": "firstName",
+                    "userRoles": "userRoles",
+                    "password": "password",
+                    "organization": "organization",
+                    "grade": "grade",
+                    "department": "department",
+                    "email": "email",
+                    "startDate": "startDate",
+                    "username": "username"
+                }
+            }}
+        },
+        "name": "Joget Users",
+        "description": "",
+        "postProcessorRunOn": "both",
+        "permission": {
+            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+            "properties": {}
+        },
+        "id": "Users",
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "storeBinder": {
+            "className": "org.joget.plugin.enterprise.DirectoryUserFormBinder",
+            "properties": {"type": {
+                "className": "",
+                "properties": {
+                    "lastName": "lastName",
+                    "reportTo": "reportTo",
+                    "endDate": "endDate",
+                    "jobTitle": "jobTitle",
+                    "active": "active",
+                    "timeZone": "timeZone",
+                    "groups": "groups",
+                    "locale": "locale",
+                    "isHod": "isHod",
+                    "employeeCode": "employeeCode",
+                    "firstName": "firstName",
+                    "userRoles": "userRoles",
+                    "password": "password",
+                    "organization": "organization",
+                    "grade": "grade",
+                    "department": "department",
+                    "email": "email",
+                    "startDate": "startDate",
+                    "username": "username"
+                }
+            }}
+        },
+        "tableName": "j_temp"
+    }
+}

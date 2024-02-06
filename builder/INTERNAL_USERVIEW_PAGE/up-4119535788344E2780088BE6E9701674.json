@@ -1,0 +1,99 @@
+{
+    "elements": [
+        {
+            "elements": [{
+                "elements": [
+                    {
+                        "elements": [{
+                            "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                            "properties": {
+                                "attr-data-events-listening": [],
+                                "template": "<!--{sampleWidth: '250px'}-->\n<div class=\"card flex-row align-items-center align-items-stretch border-0\" style=\"background-color:{{color||#348fe2}}; color:#fff;\">\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center justify-content-center rounded-left\" style=\"background:rgba(0,0,0,.4); font-size: 48px; color: #fff;\">\n        {{icon||<i class=\"fas fa-globe\"><\/i>}}\n    <\/div>\n    <div class=\"stats-info py-3 col-8\">\n        <p style=\"font-size: 24px; font-weight: 600; margin-bottom: 10px;\">{{value||3,291,922}}<\/p>\n        <h4 style=\"font-size: 12px;margin: 5px 0;\">{{title||TOTAL VISITORS}}<\/h4>\n    <\/div>\n<\/div>",
+                                "color": "#FF9000",
+                                "icon": "<i class=\"fas fa-address-book\"><\/i>",
+                                "link": "account_list",
+                                "id": "71DC3AF8D8B64F7A81C98CC1437643B5",
+                                "title": "NUMBER OF ACCOUNTS",
+                                "customId": "",
+                                "value": "#datalist.total.AccountsDashboard#"
+                            }
+                        }],
+                        "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                        "properties": {}
+                    },
+                    {
+                        "elements": [{
+                            "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                            "properties": {
+                                "attr-data-events-listening": [],
+                                "template": "<!--{sampleWidth: '250px'}-->\n<div class=\"card flex-row align-items-center align-items-stretch border-0\" style=\"background-color:{{color||#348fe2}}; color:#fff;\">\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center justify-content-center rounded-left\" style=\"background:rgba(0,0,0,.4); font-size: 48px; color: #fff;\">\n        {{icon||<i class=\"fas fa-globe\"><\/i>}}\n    <\/div>\n    <div class=\"stats-info py-3 col-8\">\n        <p style=\"font-size: 24px; font-weight: 600; margin-bottom: 10px;\">{{value||3,291,922}}<\/p>\n        <h4 style=\"font-size: 12px;margin: 5px 0;\">{{title||TOTAL VISITORS}}<\/h4>\n    <\/div>\n<\/div>",
+                                "color": "#3BCB13",
+                                "icon": "<i class=\"far fa-address-card\"><\/i>",
+                                "link": "contact_list",
+                                "id": "8A747E57A76B4655C641AFB12154ACAF",
+                                "title": "TOTAL CONTACTS",
+                                "customId": "",
+                                "value": "#datalist.total.ContactDashboard#"
+                            }
+                        }],
+                        "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                        "properties": {}
+                    },
+                    {
+                        "elements": [{
+                            "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                            "properties": {
+                                "attr-data-events-listening": [],
+                                "template": "<!--{sampleWidth: '250px'}-->\n<div class=\"card flex-row align-items-center align-items-stretch border-0\" style=\"background-color:{{color||#348fe2}}; color:#fff;\">\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center justify-content-center rounded-left\" style=\"background:rgba(0,0,0,.4); font-size: 48px; color: #fff;\">\n        {{icon||<i class=\"fas fa-globe\"><\/i>}}\n    <\/div>\n    <div class=\"stats-info py-3 col-8\">\n        <p style=\"font-size: 24px; font-weight: 600; margin-bottom: 10px;\">{{value||3,291,922}}<\/p>\n        <h4 style=\"font-size: 12px;margin: 5px 0;\">{{title||TOTAL VISITORS}}<\/h4>\n    <\/div>\n<\/div>",
+                                "color": "#DD34E2",
+                                "icon": "<i class=\"fas fa-money-check-alt\"><\/i>",
+                                "link": "opportunity_list",
+                                "id": "4BBD6B08937A464929CF1C5FCE47BD97",
+                                "title": "TOTAL OPPORTUNITIES",
+                                "customId": "",
+                                "value": "#datalist.total.OpportunityDashboard#"
+                            }
+                        }],
+                        "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                        "properties": {"id": "90EA88ED7C024B15695CF590BD6A40FB"}
+                    },
+                    {
+                        "elements": [{
+                            "className": "org.joget.plugin.enterprise.InformationTileComponent",
+                            "properties": {
+                                "attr-data-events-listening": [],
+                                "template": "<!--{sampleWidth: '250px'}-->\n<div class=\"card flex-row align-items-center align-items-stretch border-0\" style=\"background-color:{{color||#348fe2}}; color:#fff;\">\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center justify-content-center rounded-left\" style=\"background:rgba(0,0,0,.4); font-size: 48px; color: #fff;\">\n        {{icon||<i class=\"fas fa-globe\"><\/i>}}\n    <\/div>\n    <div class=\"stats-info py-3 col-8\">\n        <p style=\"font-size: 24px; font-weight: 600; margin-bottom: 10px;\">{{value||3,291,922}}<\/p>\n        <h4 style=\"font-size: 12px;margin: 5px 0;\">{{title||TOTAL VISITORS}}<\/h4>\n    <\/div>\n<\/div>",
+                                "color": "#A79D00",
+                                "icon": "<i class=\"fas fa-file-alt\"><\/i>",
+                                "link": "proposal_list",
+                                "id": "C326A19938BB4E89FBF961EBB2A8627A",
+                                "title": "TOTAL PROPOSALS",
+                                "customId": "",
+                                "value": "#datalist.total.ProposalsDashboard#"
+                            }
+                        }],
+                        "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                        "properties": {"id": "B9020BFAB6CC431E7555EE0F5DE32868"}
+                    }
+                ],
+                "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+                "properties": {
+                    "gutter": "5px",
+                    "columns": [
+                        {"style-max-width": ""},
+                        {"style-max-width": ""},
+                        {"style-max-width": ""},
+                        {"style-max-width": ""}
+                    ],
+                    "css-mobile-stack-columns": "true",
+                    "id": "E91114572BF64CBBB2CDF0AD8C9D2A84"
+                }
+            }],
+            "className": "org.joget.apps.userview.lib.component.ContainerComponent",
+            "properties": {"id": "BFADD515EF574C4E6738EC299551C2F1"}
+        },
+        {"className": "menu-component"}
+    ],
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "properties": {"id": "up-4119535788344E2780088BE6E9701674"}
+}

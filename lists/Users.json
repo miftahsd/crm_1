@@ -1,0 +1,216 @@
+{
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "showPageSizeSelector": "true",
+    "rowActions": [{
+        "name": "Data List Hyperlink Action",
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "label": "Hyperlink",
+        "id": "rowAction_0",
+        "type": "text",
+        "properties": {
+            "hrefColumn": "username",
+            "hrefParam": "id",
+            "rules": [{
+                "field": "username",
+                "join": "AND",
+                "value": "admin",
+                "operator": "<>"
+            }],
+            "href": "UserForm",
+            "label": "Edit",
+            "confirmation": "",
+            "datalist_type": "row_action",
+            "target": "_self"
+        }
+    }],
+    "columns": [
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Username",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "username",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_0",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "First name",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "firstName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_1",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Last name",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "lastName",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_2",
+            "alignment": ""
+        },
+        {
+            "hidden": "false",
+            "format": {
+                "className": "org.joget.plugin.enterprise.OptionsValueFormatter",
+                "properties": {
+                    "optionsBinder": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "options": [
+                        {
+                            "label": "Yes",
+                            "value": "1"
+                        },
+                        {
+                            "label": "No",
+                            "value": "0"
+                        }
+                    ]
+                }
+            },
+            "label": "Active",
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "active",
+            "width": "",
+            "headerAlignment": "dataListAlignCenter",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_4",
+            "alignment": "dataListAlignCenter"
+        },
+        {
+            "displayLabel": "email",
+            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Email",
+            "sortable": "false",
+            "datalist_type": "",
+            "exclude_export": "",
+            "name": "email",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_3",
+            "alignment": ""
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "username",
+    "description": "",
+    "filters": [
+        {
+            "name": "username",
+            "id": "filter_0",
+            "label": "Username",
+            "datalist_type": "filter",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-146950-fn_username"
+        },
+        {
+            "name": "firstName",
+            "id": "filter_2",
+            "label": "First Name",
+            "datalist_type": "filter",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-146950-fn_firstName"
+        },
+        {
+            "name": "lastName",
+            "id": "filter_1",
+            "label": "Last Name",
+            "datalist_type": "filter",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-146950-fn_lastName"
+        },
+        {
+            "name": "email",
+            "id": "filter_3",
+            "label": "Email",
+            "datalist_type": "filter",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            },
+            "filterParamName": "d-146950-fn_email"
+        }
+    ],
+    "showDataWhenFilterSet": "",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "buttonPosition": "bottomLeft",
+    "hidePageSize": "",
+    "checkboxPosition": "left",
+    "name": "Users",
+    "id": "Users",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JogetEntityDatalistBinder",
+        "properties": {
+            "extraCondition": "",
+            "filters": [],
+            "entity": "User"
+        }
+    },
+    "actions": [],
+    "order": "2"
+}
